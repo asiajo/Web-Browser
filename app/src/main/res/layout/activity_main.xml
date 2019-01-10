@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_url"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".01"
+            android:text="@string/back"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_fwd"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".01"
+            android:text="@string/fwd"
+            android:textStyle="bold" />
+        
+        <EditText
+            android:id="@+id/et_url"
+            android:layout_weight="0.97"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_go"
+            android:text="@string/go"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="0.01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <WebView
+        android:layout_weight="0.8"
+        android:id="@+id/wv_brow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_gravity = "center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

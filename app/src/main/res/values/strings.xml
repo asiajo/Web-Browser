@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BrowseMe!</string>
+    <string name="go">Go</string>
+    <string name="fwd">	↷</string>
+    <string name="back">↶</string>
+</resources>
