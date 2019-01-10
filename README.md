@@ -1,6 +1,6 @@
 # Web-Browser
 
-Very simple web browser. You can go to selected page, go back and forward.
+Very simple web browser for Android devices. You can go to selected page, go back and forward.
 
 first open
 
